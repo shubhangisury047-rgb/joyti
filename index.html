@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artistry - Art Gallery</title>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Art<span>istry.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#gallery" class="nav-button">Explore Art ↗</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO OUR CREATIVE WORLD</p>
+
+            <h1>Art speaks where<br>
+                <span>words are silent.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover beautiful paintings, sketches and digital
+                creations made with imagination, passion and love.
+            </p>
+
+            <a href="#gallery" class="primary-button">
+                Explore Gallery ↗
+            </a>
+
+            <div class="hero-info">
+                <div>
+                    <strong>Creative</strong>
+                    <span>Original artwork</span>
+                </div>
+                <div>
+                    <strong>Colorful</strong>
+                    <span>Inspired by life</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1000&q=85"
+                alt="Colorful abstract painting">
+            <div class="image-label">
+                <span>✦</span>
+                Art is an expression of the soul
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Explore the Gallery</h2>
+            </div>
+
+            <p class="section-description">
+                Every artwork tells a unique story.
+                Find the one that speaks to you.
+            </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+                All Art
+            </button>
+
+            <button class="filter-btn" data-filter="painting">
+                Painting
+            </button>
+
+            <button class="filter-btn" data-filter="sketch">
+                Sketch
+            </button>
+
+            <button class="filter-btn" data-filter="digital">
+                Digital Art
+            </button>
+        </div>
+
+        <!-- Artwork Cards -->
+        <div class="art-grid">
+
+            <article class="art-card" data-category="painting">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic fine art painting">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Timeless Beauty</h3>
+                        <p>Painting</p>
+                    </div>
+                    <span class="art-number">01</span>
+                </div>
+            </article>
+
+            <article class="art-card" data-category="sketch">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80"
+                        alt="Artist sketching and drawing">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Creative Lines</h3>
+                        <p>Sketch</p>
+                    </div>
+                    <span class="art-number">02</span>
+                </div>
+            </article>
+
+            <article class="art-card" data-category="digital">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=700&q=80"
+                        alt="Modern colorful abstract artwork">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Colorful Dreams</h3>
+                        <p>Digital Art</p>
+                    </div>
+                    <span class="art-number">03</span>
+                </div>
+            </article>
+
+            <article class="art-card" data-category="painting">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80"
+                        alt="Expressive contemporary painting">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Nature's Palette</h3>
+                        <p>Painting</p>
+                    </div>
+                    <span class="art-number">04</span>
+                </div>
+            </article>
+
+            <article class="art-card" data-category="sketch">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80"
+                        alt="Creative drawing process">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Silent Stories</h3>
+                        <p>Sketch</p>
+                    </div>
+                    <span class="art-number">05</span>
+                </div>
+            </article>
+
+            <article class="art-card" data-category="digital">
+                <div class="art-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=700&q=80"
+                        alt="Vibrant abstract digital artwork">
+                    <button class="view-art" aria-label="View artwork">
+                        ↗
+                    </button>
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h3>Abstract World</h3>
+                        <p>Digital Art</p>
+                    </div>
+                    <span class="art-number">06</span>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="empty-message" hidden>
+            No artworks found in this category.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=85"
+                alt="Artist working on creative artwork">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">OUR STORY</p>
+
+            <h2>Where imagination<br>becomes <span>art.</span></h2>
+
+            <p>
+                Welcome to Artistry, a creative space where colors,
+                emotions and ideas come together. Our gallery celebrates
+                artistic expression and the beauty of creativity.
+            </p>
+
+            <p>
+                From traditional paintings to modern digital creations,
+                we believe every artwork has a story worth sharing.
+            </p>
+
+            <a href="#contact" class="primary-button">
+                Get in Touch ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a creative idea?</h2>
+
+        <p>
+            We would love to hear from you.
+            Share your thoughts or ask us about our art collection.
+        </p>
+
+        <a href="mailto:hello@example.com" class="primary-button">
+            Email Us ↗
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Art<span>istry.</span></a>
+
+        <p>© <span id="year"></span> Artistry Art Gallery.</p>
+
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <!-- Image Popup / Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close-lightbox" aria-label="Close image">
+            &times;
+        </button>
+
+        <img id="lightbox-image" src="" alt="Expanded artwork">
+
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
